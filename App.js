@@ -8,9 +8,9 @@ export default function App() {
   return (
     <>
       <Login />
-      <NavigationContainer>
+      {/* <NavigationContainer>
         <Stack />
-      </NavigationContainer>
+      </NavigationContainer> */}
     </>
   );
 }
