@@ -45,7 +45,10 @@ const Login = ({ navigation: { navigate } }) => {
         </View>
 
         <View style={styles.btnContainer}>
-          <TouchableOpacity style={styles.formBtn}>
+          <TouchableOpacity
+            style={styles.formBtn}
+            onPress={() => navigate("Tabs", { screen: "홈" })}
+          >
             <Text style={styles.formBtnTitle}>로그인</Text>
           </TouchableOpacity>
           <TouchableOpacity
@@ -90,10 +93,10 @@ const styles = StyleSheet.create({
     margin: 7,
     padding: 10,
     width: SCREEN_WIDTH / 1.35,
-    height: 40,
+    height: 50,
     borderWidth: 1,
     borderRadius: 15,
-    fontSize: 14,
+    fontSize: 18,
   },
   btnContainer: {
     width: SCREEN_WIDTH / 1.3,
