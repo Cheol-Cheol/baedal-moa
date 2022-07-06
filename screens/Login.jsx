@@ -11,7 +11,7 @@ import {
 
 const { width: SCREEN_WIDTH } = Dimensions.get("window");
 
-const Login = () => {
+const Login = ({ navigation: { navigate } }) => {
   const [inputId, setInputId] = useState("");
   const [inputPw, setInputPw] = useState("");
 
@@ -48,11 +48,17 @@ const Login = () => {
           <TouchableOpacity style={styles.formBtn}>
             <Text style={styles.formBtnTitle}>로그인</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.formBtn}>
+          <TouchableOpacity
+            style={styles.formBtn}
+            onPress={() => navigate("회원가입")}
+          >
             <Text style={styles.formBtnTitle}>회원가입</Text>
           </TouchableOpacity>
 
-          <TouchableOpacity style={styles.formBtn}>
+          <TouchableOpacity
+            style={styles.formBtn}
+            onPress={() => navigate("계정 찾기")}
+          >
             <Text style={styles.formBtnTitle}>계정 찾기</Text>
           </TouchableOpacity>
         </View>
