@@ -45,7 +45,10 @@ const Login = ({ navigation: { navigate } }) => {
         </View>
 
         <View style={styles.btnContainer}>
-          <TouchableOpacity style={styles.formBtn}>
+          <TouchableOpacity
+            style={styles.formBtn}
+            onPress={() => navigate("Tabs", { screen: "홈" })}
+          >
             <Text style={styles.formBtnTitle}>로그인</Text>
           </TouchableOpacity>
           <TouchableOpacity

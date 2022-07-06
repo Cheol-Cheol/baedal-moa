@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import { NavigationContainer } from "@react-navigation/native";
-import Stack from "./navigation/Stack";
+import Root from "./navigation/Root";
 
 export default function App() {
   return (
     <>
-      {/* <Login /> */}
       <NavigationContainer>
-        <Stack />
+        <Root />
       </NavigationContainer>
     </>
   );
