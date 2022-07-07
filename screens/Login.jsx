@@ -10,7 +10,6 @@ import {
   Modal,
   Pressable,
 } from "react-native";
-
 const { width: SCREEN_WIDTH } = Dimensions.get("window");
 
 const Login = ({ navigation: { navigate } }) => {
